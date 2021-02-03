@@ -8,6 +8,8 @@ import (
 	gopkgin "gopkg.in/jybp/errors.v0"
 )
 
+// V1
+
 func Stack() string {
 	return string(debug.Stack())
 }
