@@ -8,7 +8,7 @@ import (
 	gopkgin "gopkg.in/jybp/errors.v0"
 )
 
-// V2.1
+// V3
 
 func Stack() string {
 	return string(debug.Stack())
