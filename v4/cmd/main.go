@@ -4,7 +4,7 @@ import (
 	"flag"
 	"fmt"
 
-	"github.com/jybp/gomodules/v3"
+	"github.com/jybp/gomodules/v4"
 )
 
 var ldflags, stack, panic bool
