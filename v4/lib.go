@@ -14,10 +14,6 @@ func Stack() string {
 	return string(debug.Stack())
 }
 
-func Panic() {
-	panic("panic")
-}
-
 func GopkginStack() string {
 	return fmt.Sprintf("%+v", gopkgin.Stack())
 }

@@ -1,37 +1,15 @@
 package main
 
 import (
-	"flag"
 	"fmt"
 
-	"github.com/jybp/gomodules/v4"
+	submodule "github.com/jybp/gomodules/submodule"
+	v3 "github.com/jybp/gomodules/v3"
+	v4 "github.com/jybp/gomodules/v4"
 )
 
-var ldflags, stack, panic bool
-
 func main() {
-	flag.BoolVar(&stack, "stack", false, "")
-	flag.BoolVar(&panic, "panic", false, "")
-	flag.Parse()
-	run()
-}
-
-func run() {
-	if stack {
-		fmt.Printf("debug.Stack:\n%s\n", gomodules.Stack())
-		fmt.Printf("errors Stack:\n%s\n", gomodules.ErrorsStack())
-		fmt.Printf("gopkg.in Stack:\n%s\n", gomodules.GopkginStack())
-	}
-
-	// No stack trace attached
-	if panic {
-		fmt.Printf("pkg panic:\n%+v\n", recoverPanic(gomodules.Panic))
-		fmt.Printf("submod panic:\n%+v\n", recoverPanic(gomodules.Panic))
-	}
-}
-
-func recoverPanic(f func()) (r interface{}) {
-	defer func() { r = recover() }()
-	f()
-	return
+	fmt.Printf("v3 debug.Stack:\n%s\n", v3.Stack())
+	fmt.Printf("v4 debug.Stack:\n%s\n", v4.Stack())
+	fmt.Printf("submodule debug.Stack:\n%s\n", submodule.Stack())
 }
