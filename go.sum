@@ -7,5 +7,7 @@ github.com/jybp/gomodules/submodule v0.0.0-20210219150150-0966090bb9f1/go.mod h1
 github.com/jybp/gomodules/v3 v3.0.0/go.mod h1:ZOHS36paOwKDzCvl4kI3jdgq8/bpGoEKd4SfgPh81Mg=
 github.com/jybp/gomodules/v4 v4.0.0 h1:rz5k1NJ27PCFnq4ES3rK47Kn89QVxVRjPCzy4oEOHbk=
 github.com/jybp/gomodules/v4 v4.0.0/go.mod h1:7niDJR4fUkrc9Q8/McXEgY6XhrWi+BSGUM14OdsAaQA=
+github.com/pkg/errors v0.9.1 h1:FEBLx1zS214owpjy7qsBeixbURkuhQAwrK5UwLGTwt4=
+github.com/pkg/errors v0.9.1/go.mod h1:bwawxfHBFNV+L2hUp1rHADufV3IMtnDRdf1r5NINEl0=
 gopkg.in/jybp/errors.v0 v0.8.2 h1:eLYBe34CCZu8WrVnFqj+eGf6Xg+2SlPncnf7BEjHTdw=
 gopkg.in/jybp/errors.v0 v0.8.2/go.mod h1:Wr3C6MOL5PnycOSd4Cb36nzHWMUfjMbJe1yVCnK7+Tw=
